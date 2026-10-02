@@ -1,8 +1,12 @@
 #include <iostream>
 #include <climits>
 #include <cfloat>
+#include <windows.h>
 
 int main() {
+
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
 
     char c = 'a';
     short s = -1234;
@@ -13,14 +17,14 @@ int main() {
     double d = 2.7182818;
     bool b = true;
 
-    std::cout << "Type: " << "char " << "Value: " << char(c - 32) << " " << "Size: " << sizeof(char) << " " << "min: " << CHAR_MIN << " " << "max: " << CHAR_MAX << std::endl;
-    std::cout << "Type: " << "short " << "Value: " << s << " " << "Size: " << sizeof(short) << " " << "min: " << SHRT_MIN << " " << "max: " << SHRT_MAX << std::endl;
-    std::cout << "Type: " << "int " << "Value: " << i << " " << "Size: " << sizeof(int) << " " << "min: " << INT_MIN << " "<< "max: "  << INT_MAX << std::endl;
-    std::cout << "Type: " << "long_long " << "Value: " << ll << " " << "Size: " << sizeof(long long) << " " << "min: " << LLONG_MIN << " " << "max: " << LLONG_MAX << std::endl;
-    std::cout << "Type: " << "unsigned_int " << "Value: " << ui << " " << "Size: " << sizeof(unsigned int) << " " << "min: " << 0 << " " << "max: " << UINT_MAX << std::endl;
-    std::cout << "Type: " << "float " << "Value: " << f << " " << "Size: " << sizeof(float) << " " << "min: " << -FLT_MAX << " " << "max: " << FLT_MAX << std::endl;
-    std::cout << "Type: " << "double " << "Value: " << d << " " << "Size: " << sizeof(double) << " " << "min: " << -DBL_MAX << " " << "max: " << DBL_MAX << std::endl;
-    std::cout << "Type: " << "bool " << "Value: " << b << " " << "Size: " << sizeof(bool) << " " << "min: " << 0 << " " << "max: " << 1 << std::endl;
-    
+    std::cout << "Тип: char        Значение: " << char(c - 32) << " Размер: " << sizeof(char) << " мин: " << CHAR_MIN << " макс: " << CHAR_MAX << std::endl;
+    std::cout << "Тип: short       Значение: " << s << " Размер: " << sizeof(short) << " мин: " << SHRT_MIN << " макс: " << SHRT_MAX << std::endl;
+    std::cout << "Тип: int         Значение: " << i << " Размер: " << sizeof(int) << " мин: " << INT_MIN << " макс: " << INT_MAX << std::endl;
+    std::cout << "Тип: long long   Значение: " << ll << " Размер: " << sizeof(long long) << " мин: " << LLONG_MIN << " макс: " << LLONG_MAX << std::endl;
+    std::cout << "Тип: unsigned    Значение: " << ui << " Размер: " << sizeof(unsigned int) << " мин: " << 0 << " макс: " << UINT_MAX << std::endl;
+    std::cout << "Тип: float       Значение: " << f << " Размер: " << sizeof(float) << " мин: " << -FLT_MAX << " макс: " << FLT_MAX << std::endl;
+    std::cout << "Тип: double      Значение: " << d << " Размер: " << sizeof(double) << " мин: " << -DBL_MAX << " макс: " << DBL_MAX << std::endl;
+    std::cout << "Тип: bool        Значение: " << b << " Размер: " << sizeof(bool) << " мин: " << 0 << " макс: " << 1 << std::endl;
+
     return 0;
 }
