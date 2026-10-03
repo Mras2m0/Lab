@@ -22,6 +22,7 @@ int main() {
 }
 */
 // 3 байта (4 байта)
+
 #include <iostream>
 #include <windows.h>
 
@@ -42,3 +43,23 @@ int main() {
 
     return 0;
 }
+/*
+#include <iostream>
+#include <windows.h>
+
+int main() {
+
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+    
+    unsigned short a,b;
+
+    std::cout << "Введите первую сторону прямоугольника: ";
+    std::cin >> a;
+    std::cout << "Введите вторую сторону прямоугольника: ";
+    std::cin >> b;
+    std::cout << "Периметр прямоугольника: " << 2 * (a + b) << std::endl;
+
+    return 0;
+}
+*/
