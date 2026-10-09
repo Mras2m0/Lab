@@ -44,6 +44,7 @@ int main() {
     return 0;
 }
 /*
+4 байта
 #include <iostream>
 #include <windows.h>
 

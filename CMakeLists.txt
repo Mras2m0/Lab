@@ -7,3 +7,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(Lab_1 Lab_1/main.cpp)
 add_executable(Lab_2 Lab_2/main1.cpp)
+add_executable(Lab_3 Lab_3/main.cpp)
