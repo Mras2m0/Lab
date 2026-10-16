@@ -14,6 +14,6 @@ int main() {
     std::cout << "Введите номер бита i(от 0 до 31):" << std::endl;
     std::cin >> i;
 
-    unsigned short bitValue = (x >> i) & 1;
+    bool bitValue = (x >> i) & 1;
     std::cout << "Значение бита " << i << " числа " << x << " равно: " << bitValue << std::endl;
 }
