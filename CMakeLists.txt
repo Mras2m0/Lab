@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-add_executable(Lab_1 Lab_1/main.cpp)
-add_executable(Lab_2 Lab_2/main1.cpp)
-add_executable(Lab_3 Lab_3/main.cpp)
-add_executable(Lab_4 Lab_4/main.cpp)
+add_subdirectory(Lab_1)
+add_subdirectory(Lab_2)
+add_subdirectory(Lab_3)
+add_subdirectory(Lab_4)

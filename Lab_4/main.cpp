@@ -67,13 +67,14 @@ int main() {
     int x;
 
     std::cout << "Введите значение x (1 или -1): ";
-    
+    std::cin >> x;
+    /*
     if (!(std::cin >> x) || (x != 1 && x != -1)) {
-        std::cout << "Ошибка: допускаются только значения 1 и -1.\n";
+        std::cout << "Ошибка: допускаются только значения 1 и -1." << std::endl;
         return 1;
     }
-
-    std::cout << (x == -1 ? "Negative number" : "Positive number") << '\n';
+    */
+    std::cout << (x == -1 ? "Negative number" : "Positive number") << std::endl;
 
     return 0;
 }
