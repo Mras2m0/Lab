@@ -15,7 +15,7 @@ int main() {
         if ((a <= 20) && (a >= -2)) {
             product *= a;
 
-            if (min_index == -1 || a < min_val) {
+            if (a < min_val) {
                 min_val = a;
                 min_index = current_index;
             }
@@ -46,7 +46,7 @@ int main() {
 
     int sum_even = 0;
     while (n > 0) {
-        if ((n % 10) % 2 == 0) {
+        if (n % 2 == 0) {
             sum_even += n % 10;
         }
         n /= 10;
