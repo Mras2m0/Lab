@@ -35,14 +35,14 @@ int main() {
     int n;
 
     std::cout << "Введите размер последовательности (до 10000): ";
-    if (!(std::cin >> n) || n <= 0 || n > 10000) return 1;
+    if (!(std::cin >> n) || (n <= 0) || (n > 10000)) return 1;
 
     std::cout << "Введите " << n << " чисел: ";
     for (int i = 0; i < n; ++i) {
         std::cin >> arr[i];
     }
 
-    // 1. УДАЛЕНИЕ
+    // УДАЛЕНИЕ
     int new_n = 0;
     for (int i = 0; i < n; ++i) { 
         if (!hasDuplicateDigits(arr[i])) { 
@@ -52,7 +52,7 @@ int main() {
     }
     n = new_n; 
 
-    // 2. ДУБЛИРОВАНИЕ
+    // ДУБЛИРОВАНИЕ
     for (int i = n - 1; i >= 0; --i) {
         if (hasDigit5(arr[i])) { 
             for (int j = n; j > i; --j) {

@@ -2,6 +2,7 @@
 #include <Windows.h>
 
 int SumOfDigits(unsigned int x) {
+    std::cout<<"-> Checked\n";
     int sum = 0;
     while (x > 0) {
         sum += x % 10;
@@ -14,12 +15,11 @@ int main() {
     SetConsoleCP(CP_UTF8);
     SetConsoleOutputCP(CP_UTF8);
     
-    std::cout << "Задание 1" << std::endl;
     unsigned int array[10000];
     int n;
 
     std::cout << "Введите размер последовательности (до 10000): ";
-    if (!(std::cin >> n) || n <= 0 || n > 10000) {
+    if (!(std::cin >> n) || (n <= 0) || (n > 10000)) {
         return 1;
     }
 
@@ -27,7 +27,7 @@ int main() {
     std::cout << "Введите " << n << " чисел последовательности: ";
     for (int i = 0; i < n; ++i) {
         std::cin >> array[i];
-        if (!needs_sorting && SumOfDigits(array[i]) == 14) {
+        if (!(needs_sorting) && (SumOfDigits(array[i]) == 14)) {
             needs_sorting = true;      
         }
     }

@@ -9,7 +9,7 @@ int main() {
     int n, m;
 
     std::cout << "Введите размеры матрицы N (строки) и M (столбцы) до 100: ";
-    if (!(std::cin >> n >> m) || n <= 0 || m <= 0 || n > 100 || m > 100) return 1;
+    if (!(std::cin >> n >> m) || (n <= 0) || (m <= 0) || (n > 100) || (m > 100)) return 1;
 
     std::cout << "Введите элементы матрицы: " << std::endl;
     for (int i = 0; i < n; ++i) {

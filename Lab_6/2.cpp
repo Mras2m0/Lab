@@ -20,14 +20,14 @@ bool swap(unsigned int a, unsigned int b) {
     int firstA = getFirstDigit(a), firstB = getFirstDigit(b);
     if (firstA != firstB) {
         return (firstA > firstB);
-    } else {
-        int maxA = getMaxDigit(a), maxB = getMaxDigit(b);
-        if (maxA != maxB) {
-            return (maxA > maxB);
-        } else {
-            return (a > b);
-        }
     }
+    int maxA = getMaxDigit(a), maxB = getMaxDigit(b);
+    if (maxA != maxB) {
+        return (maxA > maxB);
+    }
+    return (a > b);
+    
+    
 }
 
 int main() {
@@ -38,7 +38,7 @@ int main() {
     int n;
     
     std::cout << "Введите размер последовательности (до 1000): ";
-    if (!(std::cin >> n) || n <= 0 || n > 1000) return 1;
+    if (!(std::cin >> n) || (n <= 0) || (n > 1000)) return 1;
 
     std::cout << "Введите " << n << " чисел: ";
     for (int i = 0; i < n; ++i) {
